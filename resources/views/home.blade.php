@@ -15,7 +15,7 @@
                 <span class="text-xl font-bold text-gray-900 tracking-tight">Cloud Automation</span>
             </div>
             <div class="flex space-x-6 font-medium text-gray-600">
-                <a href="/" class="text-blue-600 hover:text-blue-700 transition">Home</a>
+                <a href="/home" class="text-blue-600 hover:text-blue-700 transition">Home</a>
                 <a href="/about" class="hover:text-gray-900 transition">About Us</a>
             </div>
         </div>
