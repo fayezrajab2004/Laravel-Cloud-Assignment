@@ -136,8 +136,8 @@
             </main>
         </div>
 
-        <div class="w-full lg:max-w-4xl mt-8">
-            <div style="margin: 0 auto; max-width: 800px; text-align: center; padding: 30px; border: 1px solid #e3e3e0; border-radius: 10px; background-color: #ffffff; z-index: 10; position: relative;" class="dark:bg-[#161615] dark:border-[#3E3E3A] dark:text-[#EDEDEC]">
+       <div class="w-full lg:max-w-4xl mt-8">
+            <div style="margin: 0 auto; max-width: 800px; text-align: center; padding: 30px; border: 1px solid #e3e3e0; border-radius: 10px; background-color: #ffffff; z-index: 10; position: relative;" class="dark:bg-[#161615] dark:border-[#3E3E3A] dark:text-[#EDEDEC] text-gray-900">
                 <h2 style="font-size: 24px; margin-bottom: 20px; font-weight: bold;">سجل عمليات النشر (Deployment History)</h2>
 
                 @if(session('success'))
@@ -156,12 +156,12 @@
                 <div style="margin-top: 30px; text-align: right;" dir="rtl">
                     <ul style="list-style-type: none; padding: 0;">
                         @forelse($records ?? [] as $record)
-                            <li style="padding: 12px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 10px;" class="dark:border-[#3E3E3A]">
+                            <li style="padding: 12px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 10px; font-weight: 500;" class="dark:border-[#3E3E3A] text-gray-800 dark:text-[#EDEDEC]">
                                 <span style="color: #10B981; font-size: 20px;">✅</span>
                                 {{ $record->status }}
                             </li>
                         @empty
-                            <li style="color: #777; text-align: center; padding: 20px;">لا توجد عمليات نشر سابقة حتى الآن. ابدأ بتجربة زر المحاكاة!</li>
+                            <li style="text-align: center; padding: 20px;" class="text-gray-600 dark:text-gray-400">لا توجد عمليات نشر سابقة حتى الآن. ابدأ بتجربة زر المحاكاة!</li>
                         @endforelse
                     </ul>
                 </div>
