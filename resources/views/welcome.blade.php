@@ -136,9 +136,9 @@
             </main>
         </div>
 
-       <div class="w-full lg:max-w-4xl mt-8">
-            <div style="margin: 0 auto; max-width: 800px; text-align: center; padding: 30px; border: 1px solid #e3e3e0; border-radius: 10px; background-color: #ffffff; z-index: 10; position: relative;" class="dark:bg-[#161615] dark:border-[#3E3E3A] dark:text-[#EDEDEC] text-gray-900">
-                <h2 style="font-size: 24px; margin-bottom: 20px; font-weight: bold;">سجل عمليات النشر (Deployment History)</h2>
+<div class="w-full lg:max-w-4xl mt-8">
+            <div style="margin: 0 auto; max-width: 800px; text-align: center; padding: 30px; border: 1px solid #e3e3e0; border-radius: 10px; background-color: #ffffff; z-index: 10; position: relative; color: #111827;" class="dark:bg-[#161615] dark:border-[#3E3E3A] dark:text-[#EDEDEC]">
+                <h2 style="font-size: 24px; margin-bottom: 20px; font-weight: bold; color: #111827;">سجل عمليات النشر (Deployment History)</h2>
 
                 @if(session('success'))
                     <div style="color: #059669; background-color: #d1fae5; padding: 10px; border-radius: 5px; margin-bottom: 15px; font-weight: bold; border: 1px solid #34d399;">
@@ -156,12 +156,12 @@
                 <div style="margin-top: 30px; text-align: right;" dir="rtl">
                     <ul style="list-style-type: none; padding: 0;">
                         @forelse($records ?? [] as $record)
-                            <li style="padding: 12px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 10px; font-weight: 500;" class="dark:border-[#3E3E3A] text-gray-800 dark:text-[#EDEDEC]">
+                            <li style="padding: 12px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 10px; font-weight: bold; color: #1f2937;" class="dark:border-[#3E3E3A] dark:text-[#EDEDEC]">
                                 <span style="color: #10B981; font-size: 20px;">✅</span>
                                 {{ $record->status }}
                             </li>
                         @empty
-                            <li style="text-align: center; padding: 20px;" class="text-gray-600 dark:text-gray-400">لا توجد عمليات نشر سابقة حتى الآن. ابدأ بتجربة زر المحاكاة!</li>
+                            <li style="text-align: center; padding: 20px; color: #4b5563;" class="dark:text-gray-400">لا توجد عمليات نشر سابقة حتى الآن. ابدأ بتجربة زر المحاكاة!</li>
                         @endforelse
                     </ul>
                 </div>
